@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:ital,wght@1,300&family=Rubik+Bubbles&family=Teko:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:ital,wght@1,300&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+	  <div class="container5">
+      <a href="index.html"><img src="images/ammarlogo.png" class="logo"></a>
+ <nav>
+      <ul>
+        <li><a href="about.html">ABOUT</a>
+          <ul>
+            <li><a href="favourite.html">FAVOURITE</a></li>
+          </ul>
+        </li>
+        <li><a href="education.html">EDUCATION</a></li>
+        <li><a href="family.html">FAMILY</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="skill.html">SKILLS</a></li>
+      </ul>
+    </nav>
+	<a href="contact.html" class="contact-item">CONTACT</a>
+  </div>
+
+
+<br>
+<br>
+	<div class="header-text">
+		<p>Student UITM Kedah</p>
+		<h1>Muhammad  Ammar Hadi 
+			Bin Baharum </h1>
+<main class="containeranimation">
+  <p>Hello 👋 I'm A</p>
+  <section class="animation">
+    <div class="first"><div>STUDENT</div></div>
+    <div class="second"><div>SON</div></div>
+    <div class="third"><div>FRIEND</div></div>
+  </section>
+</main>
+		<h2 style="color: white;">Faculty of Information Management</h2>
+	</div>
+
+<br>
+
+  <div class="video-background">
+    <video class="video-content" autoplay loop muted>
+      <source src="videos/ammartypo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+ <div class="black-box" id="color-change-box">
+   " Hey, I'm Ammar – the chill cat who also answers to Hadi at home. Whether it's Ammar or Hadi, I bring that laid-back vibe to the scene.
+    I'm cooler than the flip side of the pillow, so let's keep it breezy and enjoy the good times! "
+  </div>
+<!-------------about---------------->
+
+
+
+<br>
+<center>
+<div class="footer">
+    <div class="footer-1">
+        <img src="images/ammarlogo.png" height="70" width="200" class="logomedia">
+    </div>
+    
+    <div class="footer-2">
+        <a href="https://www.instagram.com/ammarhadiiii/?hl=en" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100013702576015" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/ammarhdi" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+</div>
+
+<hr>
+
+<div class="copyright">
+    <p>&copy; Copyright 2023 | Muhammad Ammar Hadi</p>
+</div>
+   <div class="scroll-to-top" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+</center>
+ <script>
+    
+    window.addEventListener('scroll', function () {
+      var box = document.getElementById('color-change-box');
+      var boxPosition = box.getBoundingClientRect().top;
+
+    
+      var nearScrollTopThreshold = 200;
+
+      if (boxPosition < nearScrollTopThreshold) {
+        box.classList.add('near-scroll-top');
+      } else {
+        box.classList.remove('near-scroll-top');
+      }
+
+      
+      var scrollToTopButton = document.querySelector('.scroll-to-top');
+      if (window.scrollY > 300) {
+        scrollToTopButton.classList.add('show');
+      } else {
+        scrollToTopButton.classList.remove('show');
+      }
+    });
+
+    // Function to scroll to the top smoothly
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>
+
+

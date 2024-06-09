@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- THIS IS NAVIGATION BAR -->
+
+
+   <div class="container5">
+      <a href="index.html"><img src="images/ammarlogo.png" class="logo"></a>
+ <nav>
+      <ul>
+        <li><a href="about.html">ABOUT</a>
+          <ul>
+            <li><a href="youtube.com">FAVOURITE</a></li>
+          </ul>
+        </li>
+        <li><a href="education.html">EDUCATION</a></li>
+        <li><a href="family.html">FAMILY</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="skill.html">SKILLS</a></li>
+      </ul>
+    </nav>
+	<a href="contact.html" class="contact-item">CONTACT</a>
+  </div>
+
+<center>
+
+<h2 align="center">My Favourite Songs</h2>
+
+<div class="music-container">
+  <div class="music-box">
+    <img src="images/firstavenue.jpg" alt="First Avenue Bedroom">
+    <h3>First Avenue Bedroom</h3>
+    <audio src="audio/firstavenue.mp3" type="audio/mp3" controls></audio>
+  </div>
+
+  <div class="music-box">
+    <img src="images/loveyoubetter.jpeg" alt="Love You Better">
+    <h3>Love You Better</h3>
+    <audio src="audio/loveyoubetter.mp3" type="audio/mp3" controls></audio>
+  </div>
+
+  <div class="music-box">
+    <img src="images/dontleanonme.jpg" alt="Don't Lean On Me">
+    <h3>Don't Lean On Me</h3>
+    <audio src="audio/dontleanonme.mp3" type="audio/mp3" controls></audio>
+  </div>
+</div>
+</center>
+<br>
+<div class="banner">
+  <h2>My Favourite Movies</h2>
+</div>
+<br>
+<div class="movie-container fade-in">
+  <div class="movie-description">
+    <h2>Five Feet Apart</h2>
+    <p>Five Feet Apart is a romantic, heart-rending drama about doomed young love. 
+It highlights the plight of patients living with cystic fibrosis and will appeal to 
+adult and teenage audiences. Although the plot is fairly predictable, 
+the acting is very good and the movie's messages are purposeful and empowering.</p>
+  </div>
+  <video class="movie-trailer" controls>
+    <source src="videos/fivefeet.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <img class="movie-image fade-in" src="images/fivefeet.png" alt="Five Feet Apart Image">
+</div>
+<br>
+
+<!-- Second Movie -->
+<div class="movie-container second-movie">
+  <div class="movie-description second-movie">
+    <h2>Fatherhood</h2>
+    <p>It centres on Matt (Kevin Hart), a newlywed who, following the death of 
+his wife Liz (Deborah Ayorinde), finds himself parenting his infant daughter by himself. 
+He witnesses her terrible demise, which is heartbreaking. Liz's absence is felt throughout the whole film, 
+even though it is about the struggles and victories of a single parent.</p>
+  </div>
+  <video class="movie-trailer second-movie" controls>
+    <source src="videos/fatherhood.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <img class="movie-image fade-in" src="images/fatherhood.png" alt="Fatherhood Image">
+</div>
+<br>
+<!-- Third Movie -->
+<div class="movie-container">
+  <div class="movie-description">
+    <h2>Top Gun: Maverick</h2>
+    <p>As a top naval aviator thirty years later, Maverick is still pushing the
+ boundaries. However, when he guides the elite graduates of TOP GUN on a mission that 
+requires the utmost sacrifice from 
+those selected to fly it, he must face the demons of his past.</p>
+  </div>
+  <video class="movie-trailer" controls>
+    <source src="videos/topgun.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <img class="movie-image fade-in" src="images/topgun.png" alt="Top Gun Maverick">
+</div>
+
+
+<!-- FOOTER -->
+<center>
+
+<div class="footer">
+    <div class="footer-1">
+        <img src="images/ammarlogo.png" height="70" width="200" class="logomedia">
+    </div>
+    
+    <div class="footer-2">
+        <a href="https://www.instagram.com/ammarhadiiii/?hl=en" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100013702576015" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/ammarhdi" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+</div>
+
+<hr>
+
+<div class="copyright">
+    <p>&copy; Copyright 2023 | Muhammad Ammar Hadi</p>
+</div>
+
+</center> 
+
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("scroll", fadeInOnScroll);
+  });
+
+  function fadeInOnScroll() {
+    const elements = document.querySelectorAll(".fade-in");
+
+    elements.forEach(function(element) {
+      const elementTop = element.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      const middleOfViewport = windowHeight / 2;
+
+      // Check if the top of the element is in the middle of the viewport
+      if (elementTop < middleOfViewport) {
+        element.style.opacity = 1;
+      }
+    });
+  }
+</script>
+</body>

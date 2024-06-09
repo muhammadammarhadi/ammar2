@@ -1,0 +1,1158 @@
+* {
+  padding: 0;
+  margin: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container5 {
+	font-family: 'Oswald', sans-serif;
+
+}
+body {
+ 
+	background-color: rgb(242,243,245)
+	
+	
+
+}
+
+h1, h2 {
+	font-family: 'Poppins', sans-serif;
+}
+
+  h2 {
+	position: relative;
+	font-size: 30px;
+	 display: inline-block;
+  overflow: hidden;
+	align: center;
+	
+    }
+
+
+h2::after {
+	content: '';
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 90%;
+  left: 0;
+  bottom: 10%;
+  background: linear-gradient(to bottom, #0000 60%, #fcc93e 50%);
+  z-index: -1;
+
+	
+
+	
+	
+}
+
+.rounded {
+
+	display: inline-block;
+	padding: -5px;
+	font-family: 'Teko', sans-serif;
+	font-size: 40px;
+}
+#header {
+	width: 100%;
+	height: 90vh;
+	background-image: url(images/newcover.png);
+	background-size: cover;
+	background-position: center;
+	color: white;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+font-family: "Oswald", sans-serif;
+
+	
+
+}
+#headerabout{
+	width: 100%;
+	height: 100vh;
+font-family: 'Poppins', sans-serif;
+	
+
+}
+
+
+
+.container5 {
+  padding: 10px 3%;
+  background-color: black;
+  color: white;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+font-family: 'Oswald', sans-serif;
+
+}
+
+.logo {
+  width: 140px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+   justify-content: center;
+  width: 100%; /* Set the width to 100% to occupy the full space */
+font-family: 'Oswald', sans-serif;
+
+}
+
+nav ul li {
+  margin: 10px 20px;
+}
+
+.menu-gap {
+  margin-left: 250px; /* Adjust the margin value as needed */
+}
+
+/* Style for the Contact link */
+.contact-item {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  padding: 5px 10px; /* Adjust padding as needed */
+  border-radius: 10px; /* Rounded corners */
+  background-color: white; /* Background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+  transition: background-color 0.3s ease; /* Transition effect for background color */
+}
+
+
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+	font-family: 'Oswald', sans-serif;
+letter-spacing: 1px;
+font-weight: 500;
+
+}
+
+li, a, button {
+	text-decoration: none;
+font-family: 'Oswald', sans-serif;
+letter-spacing: 1px;
+font-weight: 500;
+
+
+}
+
+/*-------------------dropdown------------*/
+
+nav {
+	font-family: 'Oswald', sans-serif;
+}
+        nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 10px 20px;
+      position: relative;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+	transform: translateX(-50%);
+      background-color: #fff;
+width: 140px;
+	justify-content: center;
+	
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul ul li {
+      width: 80%;
+      text-align: left;
+      padding: 10px;
+    }
+
+nav ul ul li a {
+font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+
+
+/*-------------------dropdown------------*/
+     .black-box {
+      font-size: 70px;
+      color: black;
+      background-color: #FAF9F6;
+      margin-top: -55px;
+      padding: 200px;
+      margin-bottom: 0px;
+      font-weight: 700;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: color 1s ease; /* Slower transition for color change */
+font-family: 'Bebas Neue', sans-serif;
+z-index: 1; /* Ensure text is on top of the video */
+    }
+
+
+
+    .video-background {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0; /* Ensure video is behind the text */
+	margin-top: 80px;
+
+    }
+
+    .video-content {
+      position: relative;
+      z-index: 1;
+	max-width: 100%;
+    }
+
+
+    .near-scroll-top {
+      color: #00A19B !important;
+    }
+/*--------------button-totop-------*/
+ .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: black;
+      border: none;
+      border-radius: 50%;
+      padding: 10px;
+      cursor: pointer;
+      display: none;
+      z-index: 999; /* Ensure the button is on top of other elements */
+      transition: opacity 0.5s, transform 0.5s;
+    }
+
+    .scroll-to-top i {
+      color: white;
+      font-size: 16px;
+    }
+
+    .scroll-to-top:hover {
+      background-color: #333; /* Darken the circle on hover */
+    }
+
+    .scroll-to-top.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+/*------------------text-----------*/
+
+
+
+.header-text{
+	margin-top: 15%;
+	font-size: 30px;
+	margin-left: 10%;
+	color: black;
+}
+
+.header-text h1{
+	font-size: 40px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+.header-text h1 span{
+	color: rgb(251, 218, 12)
+}
+
+.header-text h2{
+	font-size: 20px;
+	margin-top: 5px;
+	background-color: black;
+	
+	display: inline-block;
+	padding: 10px;
+	
+}
+
+.underhead {
+	font-size: 80px;
+	font-family: 'Teko', sans-serif;
+	
+
+}
+
+/*------------------animation-----------*/
+
+p {
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+	font-family: 'Poppins', sans-serif;
+}
+.containeranimation {
+  color: black;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+  display: flex;
+	align-items: center;
+
+
+}
+
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+  border-radius: 10px;
+
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color:#20a7d8;
+}
+.second div {
+  background-color:#CD921E;
+}
+.third div {
+  background-color:#c10528;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
+}
+
+
+
+/* ---------------------under---------------------- */
+
+
+
+/* -----------------------about------------------------ */
+
+
+.footer {
+    background-color: #2C3E50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #fff;
+	margin-top: 20px;
+}
+
+.footer-1, .footer-2 {
+    width: 50%;
+}
+
+.logomedia {
+    height: 70px;
+    width: 200px;
+}
+
+.footer-2 a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.footer-2 i {
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.footer-2 i:hover {
+    color: #E74C3C;
+}
+
+hr {
+    margin: 0; /* Remove the top margin */
+    border: 0;
+    border-top: 1px solid #fff;
+    width: 100%; /* Ensure the line spans the full width */
+}
+
+.copyright {
+    text-align: center;
+    color: #fff;
+	 background-color: #2C3E50;
+}
+
+i {
+	padding: 5px;
+		
+}
+
+  table {
+            width: 70%;
+            border-collapse: separate;
+            border-spacing: 0 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #cfe2f3; /* Light Blue */
+            color: #000;
+        }
+
+        td {
+            background-color: #fff;
+            color: #333;
+        }
+
+        td:first-child {
+            text-align: left;
+        }
+
+			/*------------photo slider on about page------------*/
+
+    .slider-container {
+      width: 100%;
+      max-width: 1500px;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+	height: 900px;
+
+
+    }
+
+    .slider-wrapper {
+      display: flex;
+      transition: transform 1s ease-in-out;
+ height: 100%;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      overflow: hidden;
+
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+object-fit: cover; /* Use object-fit to crop the image */
+      
+    }
+
+    .slider-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      color: white;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+body {
+	background-color: #f8fafc;
+}
+
+.container1 {
+	padding: 1rem;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 110rem;
+	margin: 0 auto;
+}
+
+.slider {
+	display: flex;
+	height: 80vh;
+	width: 100%;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+
+
+
+
+
+/*-------------ABOUT PAGE (BOX DIVISON)------------*/
+
+
+
+.box1 {
+	height: 100px;
+	width: 100%;
+	background-color: yellow;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+	
+}
+	
+/*---------GALLERY GRID------------*/
+
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+/*-------------WRAPPER FOR FAMILY PHOTO INTRODUCTION-----*/
+
+.familywrap {
+	display: flex;
+	padding: 20px;
+
+}
+
+.familyphoto {
+	border-radius: 20px;
+	float: right;
+	
+}
+
+
+.family-1, .descfamily {
+	width: 50%;
+	margin: 20px;
+
+}
+
+.familypotrait {
+	border-radius: 35px;
+	
+
+}
+
+
+/*---------EDUCATION---------*/
+
+
+
+.closerdesc {
+	margin-top: -1.5em;
+	font-size: 20px;
+
+
+
+}
+
+.edu-sec {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 700px;
+	border-radius: 10px;
+	padding: 40px;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	font-size: 30px;
+	
+}
+
+         .era-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+    
+          
+        }
+
+        .era-box {
+            text-align: center;
+        }
+
+        .era-box h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .era-box img {
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .era-box img:hover {
+            transform: scale(1.1);
+        }
+/* -------------------skills display------------------- */
+
+   .skill-bar {
+            width: 25%;
+       
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+	.skill-bars-container {
+ 	 display: flex;
+ 	 justify-content: center; /* Optional: Adjust the alignment of the bars horizontally */
+	}
+
+        .skill {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .skill-label {
+            margin-bottom: 5px;
+		font-weight: 600;
+        }
+
+        .skill-bar-outer {
+            width: 100%;
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .skill-bar-inner {
+            height: 100%;
+            background-color: #562DD4;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 20px;
+            color: #fff;
+            width: 0;
+            position: absolute;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 5px;
+        }
+
+        .percentage {
+            color: white;
+
+
+        }
+
+	.bubble {
+		background-color: #562DD4;
+		display: inline-block;
+		font-family: 'Oswald', sans-serif;
+		text-align: center;
+		padding: 10px;
+		font-size: 50px;
+}
+
+
+
+
+/* ------------------divisions for music------------------ */
+
+.music-container {
+  display: flex;
+justify-content: center;
+  margin-top: 20px;
+}
+
+.music-box {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out;
+  width: 300px;
+}
+
+.music-box:hover {
+  transform: scale(1.05);
+}
+
+.music-box img {
+  border-radius: 8px;
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+h3 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+audio {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* ------------------divisions for movie------------------ */
+
+    .banner {
+      background-color: #222; /* Black background */
+      color: #fff; /* White text */
+      text-align: center;
+      padding: 20px; /* Adjust padding as needed */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow for a trendy look */
+	margin-bottom: 0;
+    }
+
+    .banner h2 {
+      margin: 0; /* Remove default margin */
+      font-size: 28px; /* Increase font size for a bold look */
+    }
+
+
+ .fade-in {
+      opacity: 0.5;
+      transition: opacity 0.5s ease-in-out;
+    }
+.movie-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Add some gap between child elements */
+  overflow: hidden;
+	margin-top: -30px;
+}
+.movie-description {
+  position: absolute;
+  left: 50px; /* Adjust the left position as needed */
+  margin-right: 20px; /* Add margin to create space between description and video */
+  max-width: calc(40% - 40px); /* Maximum width for the description */
+  color: #fff; /* Text color */
+  z-index: 2; /* Ensure the description is on top of the image */
+}
+
+.movie-trailer {
+  position: absolute;
+  right: 50px; /* Adjust the right position as needed */
+  width: 40%; /* Width for the trailer */
+  z-index: 2; /* Ensure the trailer is on top of the image */
+}
+
+   .movie-description,
+    .movie-trailer {
+      transition: left 0.3s ease-in-out; /* Add transition for the left property */
+    }
+
+    .movie-trailer video {
+      transition: width 0.3s ease-in-out; /* Add transition for the width property */
+    }
+
+.movie-description h2 {
+  margin-bottom: 10px;
+  font-size: 36px; /* Increased font size for the title */
+}
+
+.movie-description p {
+  font-size: 24px; /* Increased font size for the description */
+}
+
+.movie-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Ensure the image is behind the description and trailer */
+}
+
+    .movie-container.second-movie {
+      flex-direction: row-reverse; /* Reverse the order of flex items for the second movie */
+    }
+
+    .movie-description.second-movie {
+      left: auto;
+      right: 50px;
+text-align: right;
+
+    }
+
+    .movie-trailer.second-movie {
+      left: 50px;
+      right: auto;
+    }
+
+/* -----------------gallery----------------- */
+
+.wrappergal {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+
+
+   .wrappergal {
+      display: flex;
+   
+      margin: 20px;
+    }
+
+    .img-container {
+      position: relative;
+	overflow: hidden;
+	z-index: 1;
+    }
+
+	img-container:hover {
+	z-index: 2;
+}
+    .img-container img {
+  
+  
+      transition: transform 0.3s ease-in-out;
+	z-index: 1
+    }
+ .img-container:hover img {
+      transform: scale(1.2); /* Adjust the scale factor as needed */
+	
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+   .img-container:hover .overlay {
+      opacity: 1;
+      transform: scale(1.2); /* Apply the same scale factor as the image */
+
+    }
+
+    .descimg {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+ .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+  
+        }
+
+      .image-container {
+       
+        }
+
+
+    .image-box {
+            width: 300px;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+		border-radius: 15px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+   .center-container {
+            display: flex;
+            justify-content: center;
+	align-items: center;
+        }
+
+        .image-container {
+            display: flex;
+            width: 70%;
+ 
+        }
+.description-section {
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+
+
+}
+
+        .image-section,
+        .description-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+
+	
+	
+        }
+
+        .image-section img {
+          
+            height: auto;
+            border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+.description-section .siblingname {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-weight: 10;
+    text-align: left;
+    padding: 10px;
+}
+
+
+        .image-wrapper {
+            display: flex;
+            width: 70%;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+
+/* ----------------quotes---------------- */
+
+.quote-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    background: linear-gradient(#f8f8f8, #e6e6e6); /* Gradient Background */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Updated Box Shadow */
+    padding: 20px;
+    text-align: center;
+}
+
+.quote-text {
+    font-size: 50px;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 20px;
+    padding: 0 10px; /* Added Padding */
+	font-family: 'Futura', sans-serif;
+	font-weight: 800;
+}
+
+.quote-author {
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+}
+
+.admiration-statement {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+    border-top: 2px solid black; /* Trendy color for separation */
+    padding-top: 20px; /* Increased padding at the top */
+    font-style: italic;
+    font-weight: 500; /* Adjusted font weight for a bolder look */
+    text-align: center;
+    opacity: 0.9; /* Slight opacity for a modern touch */
+    letter-spacing: 1px; /* Increased letter spacing for emphasis */
+}
+
+/* ----------------contact me-------------- */
+.contact-container {
+    display: flex;
+    
+	gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%; /* Adjust as needed */
+    text-align: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.get-in-touch {
+    width: 45%; /* Adjust as needed */
+    text-align: left;
+}
+
+.get-in-touch h2 {
+    color: #007bff; /* Blue color */
+    font-size: 40px; /* Larger font size */
+    margin-bottom: 20px;
+}
+
+.get-in-touch p {
+    font-size: 20px; /* Larger font size */
+    color: #555;
+}
+
+.social-icons {
+    width: 500px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.separator {
+    width: 1px; /* Width of the separator line */
+    height: 70px; /* Adjust as needed */
+    background-color: #ddd; /* Separator line color */
+}
+
+.social-icon {
+    margin: 0 30px;
+}
+
+.social-icon img {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+}
+
+.social-icon p {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #555;
+}
+
+.contact-button {
+    background-color: #E74C3C;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #C0392B;
+}
+
+
